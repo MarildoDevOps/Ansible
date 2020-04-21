@@ -1,0 +1,1 @@
+~# ansible 192.168.250.101 -i /etc/ansible/hosts -m 'raw apt-get -y install python-simplejson' -u churrops --ask-pass -b -KMo
