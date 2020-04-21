@@ -51,3 +51,6 @@ become_ask_pass         = False                         ; Perguntar a senha.
 scp_if_ssh              = smart                         ; Executa sftp e se nao conseguir tenta com scp (Padrao).
 transfer_method         = smart                         ; Ordem de execucao: sftp --> scp (padrao).
 retries                 = 3                             ; Tempo para nova tentativa de conxao com um host.
+
+
+ ansible all -m gather_facts --tree /tmp/facts
