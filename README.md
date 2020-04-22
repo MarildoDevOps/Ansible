@@ -53,4 +53,9 @@ transfer_method         = smart                         ; Ordem de execucao: sft
 retries                 = 3                             ; Tempo para nova tentativa de conxao com um host.
 
 
- ansible all -m gather_facts --tree /tmp/facts
+#comando valida inv
+ansible all -m gather_facts --tree /tmp/facts
+
+
+#comando valida sintax
+ansible-playbook playbooks/install-httpd.yml --syntax-check
